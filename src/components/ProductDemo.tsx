@@ -1192,60 +1192,63 @@ export default function ProductDemo() {
       {(isRunning || isComplete) && <StepIndicator currentStep={step} />}
 
       {/* Canvas */}
-      <div
-        className="relative w-full border border-grid/20 overflow-hidden bg-background"
-        style={{
-          maxWidth: 820,
-          height: 420,
-        }}
-      >
-        {/* Corner markers */}
-        <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-primary z-10" />
-        <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-primary z-10" />
-        <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-primary z-10" />
-        <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-primary z-10" />
+      <div className="w-full overflow-x-auto pb-4 hide-scrollbar">
+        <div
+          className="relative border border-grid/20 overflow-hidden bg-background mx-auto"
+          style={{
+            minWidth: 820,
+            maxWidth: 820,
+            height: 420,
+          }}
+        >
+          {/* Corner markers */}
+          <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-primary z-10" />
+          <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-primary z-10" />
+          <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-primary z-10" />
+          <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-primary z-10" />
 
-        <AnimatePresence mode="wait">
-          {isIdle && (
-            <motion.div
-              key="idle"
-              className="flex flex-col items-center justify-center w-full h-full gap-3 text-primary/30"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-            >
-              <svg
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+          <AnimatePresence mode="wait">
+            {isIdle && (
+              <motion.div
+                key="idle"
+                className="flex flex-col items-center justify-center w-full h-full gap-3 text-primary/30"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
               >
-                <circle cx="12" cy="12" r="10" />
-                <polygon
-                  points="10 8 16 12 10 16 10 8"
-                  fill="currentColor"
-                />
-              </svg>
-              <span className="font-mono text-[13px] font-medium tracking-wider">
-                PRESS RUN DEMO TO BEGIN
-              </span>
-            </motion.div>
-          )}
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon
+                    points="10 8 16 12 10 16 10 8"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span className="font-mono text-[13px] font-medium tracking-wider">
+                  PRESS RUN DEMO TO BEGIN
+                </span>
+              </motion.div>
+            )}
 
-          {step === 1 && <Scene1 phase={phase} />}
-          {step === 2 && <Scene2 phase={phase} />}
-          {step === 3 && <Scene3 phase={phase} />}
-          {step === 4 && <Scene4 phase={phase} />}
-          {step === 5 && <Scene5 phase={phase} />}
-          {step === 6 && <Scene6 phase={phase} />}
+            {step === 1 && <Scene1 phase={phase} />}
+            {step === 2 && <Scene2 phase={phase} />}
+            {step === 3 && <Scene3 phase={phase} />}
+            {step === 4 && <Scene4 phase={phase} />}
+            {step === 5 && <Scene5 phase={phase} />}
+            {step === 6 && <Scene6 phase={phase} />}
 
-          {isComplete && <CompletionOverlay />}
-        </AnimatePresence>
+            {isComplete && <CompletionOverlay />}
+          </AnimatePresence>
+        </div>
       </div>
 
       {/* Description Panel */}

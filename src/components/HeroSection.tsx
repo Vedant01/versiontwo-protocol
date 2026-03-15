@@ -9,10 +9,10 @@ const HeroSection = () => {
         <div className="space-y-6">
           <StatusBadge text="PROTOCOL V2.0 — ACTIVE" />
 
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[0.9] text-primary break-words">
-            TRUST<br className="hidden md:block" />
-            INFRASTRUCTURE<br className="hidden md:block" />
-            FOR MACHINE<br className="hidden md:block" />
+          <h1 className="font-display text-[11vw] sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[0.9] text-primary">
+            TRUST<br />
+            INFRASTRUCTURE<br />
+            FOR MACHINE<br />
             INTELLIGENCE.
           </h1>
 
