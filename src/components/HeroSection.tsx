@@ -3,16 +3,16 @@ import StatusBadge from "@/components/StatusBadge";
 
 const HeroSection = () => {
   return (
-    <section className="h-[calc(100vh-3.5rem)] flex items-center px-6 md:px-12 lg:px-20">
+    <section className="min-h-[calc(100vh-3.5rem)] py-12 md:py-0 flex items-center px-6 md:px-12 lg:px-20">
       <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left Column */}
         <div className="space-y-6">
           <StatusBadge text="PROTOCOL V2.0 — ACTIVE" />
 
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[0.9] text-primary">
-            TRUST<br />
-            INFRASTRUCTURE<br />
-            FOR MACHINE<br />
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[0.9] text-primary break-words">
+            TRUST<br className="hidden md:block" />
+            INFRASTRUCTURE<br className="hidden md:block" />
+            FOR MACHINE<br className="hidden md:block" />
             INTELLIGENCE.
           </h1>
 
@@ -36,19 +36,19 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center gap-4 md:gap-8">
             <div>
               <span className="font-display text-2xl font-bold text-primary">3.36×</span>
               <p className="text-technical text-primary/50 mt-1">SURVIVAL ADVANTAGE</p>
               <p className="font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">observed in cooperative agent simulations</p>
             </div>
-            <div className="w-px h-10 bg-primary/20" />
+            <div className="hidden md:block w-px h-10 bg-primary/20" />
             <div>
               <span className="font-display text-2xl font-bold text-primary">3 GEN</span>
               <p className="text-technical text-primary/50 mt-1">EXPLOITER EXTINCTION</p>
               <p className="font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">circuit breaker activates within 3 generations</p>
             </div>
-            <div className="w-px h-10 bg-primary/20" />
+            <div className="hidden md:block w-px h-10 bg-primary/20" />
             <div>
               <span className="font-display text-2xl font-bold text-primary">R²=0.999</span>
               <p className="text-technical text-primary/50 mt-1">MODEL ACCURACY</p>
@@ -59,7 +59,7 @@ const HeroSection = () => {
 
         {/* Right Column — Abstract Wireframe */}
         <div className="flex items-center justify-center">
-          <div className="relative w-[340px] h-[340px] md:w-[400px] md:h-[400px] border border-dashed border-grid/30">
+          <div className="relative w-full max-w-[340px] aspect-square md:max-w-[400px] border border-dashed border-grid/30">
             {/* Orbiting circle */}
             <div className="absolute inset-0 flex items-center justify-center">
               <svg viewBox="0 0 400 400" className="w-full h-full animate-orbit" style={{ animationDuration: '20s' }}>

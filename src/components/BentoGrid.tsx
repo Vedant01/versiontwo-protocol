@@ -14,7 +14,7 @@ const BentoGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-grid/20">
           {/* Cell 01 — Karma Minting */}
-          <div className="bg-background p-8 space-y-6">
+          <div className="bg-background p-6 md:p-8 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-1 h-6 bg-coral" />
               <span className="text-technical text-primary">SOULBOUND MINTING</span>
@@ -34,7 +34,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Cell 02 — Decay Engine */}
-          <div className="bg-background p-8 space-y-6">
+          <div className="bg-background p-6 md:p-8 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-1 h-6 bg-mint" />
               <span className="text-technical text-primary">DECAY ENGINE</span>
@@ -63,7 +63,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Cell 03 — Validation Pipeline */}
-          <div className="bg-background p-8 space-y-6">
+          <div className="bg-background p-6 md:p-8 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-1 h-6 bg-gold" />
               <span className="text-technical text-primary">3-LAYER VALIDATION</span>
@@ -88,7 +88,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Cell 04 — Circuit Breaker */}
-          <div className="bg-background p-8 space-y-6">
+          <div className="bg-background p-6 md:p-8 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-1 h-6 bg-primary" />
               <span className="text-technical text-primary">CIRCUIT BREAKER</span>
