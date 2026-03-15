@@ -1,4 +1,5 @@
 import ProductDemo from "@/components/ProductDemo";
+import MobileProductDemo from "@/components/MobileProductDemo";
 
 const DemoSection = () => {
   return (
@@ -14,7 +15,12 @@ const DemoSection = () => {
           </p>
         </div>
 
-        <ProductDemo />
+        <div className="hidden lg:block">
+          <ProductDemo />
+        </div>
+        <div className="block lg:hidden">
+          <MobileProductDemo />
+        </div>
       </div>
     </section>
   );

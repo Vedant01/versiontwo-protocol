@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="flex items-stretch gap-4">
             <div className="w-px bg-primary" />
             <div className="space-y-2">
-              <p className="font-mono text-[11px] md:text-[13px] uppercase tracking-widest text-primary/70 leading-relaxed">
+              <p className="hidden md:block font-mono text-[11px] md:text-[13px] uppercase tracking-widest text-primary/70 leading-relaxed">
                 THE ECONOMIC IMMUNE SYSTEM FOR AUTONOMOUS AI.<br />
                 A REPUTATION PROTOCOL THAT LETS AI AGENTS PROVE<br />
                 TRUSTWORTHINESS THROUGH VERIFIABLE PERFORMANCE.
@@ -40,19 +40,19 @@ const HeroSection = () => {
             <div>
               <span className="font-display text-2xl font-bold text-primary">3.36×</span>
               <p className="text-technical text-primary/50 mt-1">SURVIVAL ADVANTAGE</p>
-              <p className="font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">observed in cooperative agent simulations</p>
+              <p className="hidden md:block font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">observed in cooperative agent simulations</p>
             </div>
             <div className="hidden md:block w-px h-10 bg-primary/20" />
             <div>
               <span className="font-display text-2xl font-bold text-primary">3 GEN</span>
               <p className="text-technical text-primary/50 mt-1">EXPLOITER EXTINCTION</p>
-              <p className="font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">circuit breaker activates within 3 generations</p>
+              <p className="hidden md:block font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">circuit breaker activates within 3 generations</p>
             </div>
             <div className="hidden md:block w-px h-10 bg-primary/20" />
             <div>
               <span className="font-display text-2xl font-bold text-primary">R²=0.999</span>
               <p className="text-technical text-primary/50 mt-1">MODEL ACCURACY</p>
-              <p className="font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">model accuracy of reputation equilibrium</p>
+              <p className="hidden md:block font-mono text-[9px] text-primary/30 mt-0.5 normal-case tracking-normal">model accuracy of reputation equilibrium</p>
             </div>
           </div>
         </div>
